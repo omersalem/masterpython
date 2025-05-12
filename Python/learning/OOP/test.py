@@ -1,7 +1,22 @@
 class Sum:
+    counter = 0 # Class Attribute
+
+    @classmethod
+    def class_method(cls):
+        return f'This is a class method and the counter is {cls.counter}'
+    @staticmethod
+    def static_method():
+        return f'This is a static method and the counter is {Sum.counter}'
+    
+    def __len__(self,a,b):
+        # This method is used to return the length of the two numbers:
+        print(f'The length of the two numbers is {len(str(a)) + len(str(b))}')
+       
+    
     def __init__(self, a, b):
         self.a = a
         self.b = b
+        print(f'this message is from init magic method')
 
     def total(self):
         return self.a + self.b
@@ -38,3 +53,13 @@ class hasLetterA:
             return f'The letter a is not in the name {self.name}'
 string1 = hasLetterA('ahmed')
 print(string1.check())
+print(Sum.class_method())
+print(Sum.static_method())
+group2= Sum(2,3)
+#to call the len method we need to call the instance of the class
+print(group2.__len__(2,3))
+
+
+
+
+
