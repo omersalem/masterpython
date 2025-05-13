@@ -59,7 +59,30 @@ group2= Sum(2,3)
 #to call the len method we need to call the instance of the class
 print(group2.__len__(2,3))
 
+print("*" * 50)
+class person:
+    def __init__(self, length, weight):
+        self.length = length
+        self.weight = weight
+        print(f'the length of the person is {self.length} and the weight is {self.weight}')
+    def characteristics(self):
+        print(f'The length of the is person is {self.length} and the weight is {self.weight}')
+class student(person):
+    def __init__(self, length,weight, name, age,speed=0):
+        super().__init__(length, weight)
+        self.name = name
+        self.age = age
+        self.speed = speed
+        print(f'the length of the student is {self.length} and the weight is {self.weight} and the name is {self.name} and the age is {self.age}')
+    def speedy(self):
+        s=int(input('please enter the speed of the student'))
+        print(f'The speed of the student is {s}')
+omar= student(1.75, 70, 'omar', 20) #here we didnt pass the speed so it will take the default value of 0
+omar.characteristics()
+omar.speedy()
 
+
+      
 
 
 
