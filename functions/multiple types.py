@@ -127,3 +127,6 @@ for dev in stopped_devs:
 
 print(f"\nTotal running devices: {len(running_devs)}")
 print(f"Total stopped devices: {len(stopped_devs)}")
+
+# here we made test for git fork dont worry
+print("this is not apart of app it is just for testing git fork")
