@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ pagetitle }}</title> <!-- pagetitle is a variable that can be used in the HTML file
+    using {{ pagetitle }} means that this variable will be replaced by
+     the value of pagetitle variable passed from the Flask app  -->
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- so all these css files will be applied to all the pages that extend this base.html file
+    so we can use the same css files in all the pages that extend this base.html file
+     and we can add more css files if we want to -->
+
+
+</head>
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>
