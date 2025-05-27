@@ -1,4 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} <!-- this means that this file will extend the base.html file
+     so all the content inside the base.html file will be inherited by this file -->
+
+{% set pagetitle = 'About Page' %} <!-- this sets the value of pagetitle variable to 'About Page'
+     so we can use it in the base.html file to set the title of the page -->
 {% block body %}
 this is about page
 {% endblock %}
+<!-- so here we can controll the content iside the body block 
+ in this file so (this is about page) will be displayed in the page
+and all the other attributes like title, css files, etc.
+ will be inherited from the base.html file -->
