@@ -1,0 +1,13 @@
+{% extends 'b.html' %} <!-- this means that this file will extend the base.html file
+so all the content inside the base.html file will be inherited by this file -->
+
+{% set pagetitle = 'About Page' %} <!-- this sets the value of pagetitle variable to 'About Page'
+so we can use it in the base.html file to set the title of the page -->
+{% block extra_css %}
+{{ super() }} <!-- we use super() to inherit the css files from the base.html file 
+and then we add our own css file which is a.css -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/a.css') }}">
+{% endblock %}
+{% block body %}
+this is about page
+{% endblock %}

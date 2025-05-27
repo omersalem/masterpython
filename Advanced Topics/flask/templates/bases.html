@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <!-- so here we are using url_for to link the css file
+         so it will be applied to all the pages that extend this base.html file
+         and we can use the same css files in all the pages that extend this base.html file
+         and we can add more css files if we want to and here we see that the main.css is located
+         in css folder which is inside the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}" />
+    
+</head>
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>

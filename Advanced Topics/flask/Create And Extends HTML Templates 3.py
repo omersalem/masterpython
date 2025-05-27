@@ -1,7 +1,8 @@
 # ----------------------------------------------
 # -- Flask => Create & Extends Html Templates --
 # ----------------------------------------------
-
+# extend the base template mean that we will use the base.html file as a
+#template for the other html files
 from flask import Flask, render_template
 
 skills_app = Flask(__name__)

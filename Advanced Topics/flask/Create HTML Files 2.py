@@ -12,6 +12,7 @@ skills_app = Flask(__name__)
 def homepage():
   return render_template("homepage.html", pagetitle="Homepage") # Render the
   # homepage.html file with a variable pagetitle that can be used in the HTML file
+# by using {{ pagetitle }} in the HTML file and we can use multiple variables beside pagetitle
 # to render html file we need to create a folder called templates and
 # then put the html file in it and the template folder should be in the same
 # folder as the python file so here we will create a folder called templates
